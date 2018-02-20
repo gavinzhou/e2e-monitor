@@ -1,2 +1,5 @@
 # e2e-monitor
-e2e monitor with tsdb
+
+monitor end to end test use puppeteer.
+
+send load speed to influxdb ,show graph with grafana.
