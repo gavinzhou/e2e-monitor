@@ -25,7 +25,7 @@ async function run() {
     await page.click(CLICK_BUTTON);
     await page.tracing.stop();
     const results = await speedline(filename);
-    console.log('Speed Index value:', results.speedIndex);
+    console.log('e2e,target_loc=office,target_ip=outlook.office.com resp_time=%d', results.speedIndex);
   } catch (e) {
     console.error(e);
   }
