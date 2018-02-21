@@ -12,7 +12,7 @@ async function run() {
   const browser = await puppeteer.launch({
     args: ['--no-sandbox']
   });
-  const filename = 'trace.json';
+  const filename = '/tmp/trace.json';
   const page = await browser.newPage();
   try {
     await page.tracing.start({path: filename, screenshots: true});
