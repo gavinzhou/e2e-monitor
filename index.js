@@ -10,7 +10,7 @@ const CREDS = require('./creds');
 
 async function run() {
   const browser = await puppeteer.launch({
-    headless: false
+    args: ['--no-sandbox']
   });
   const filename = 'trace.json';
   const page = await browser.newPage();
